@@ -12,5 +12,6 @@
 */
 
 Route::get('/todo','TodoController@index');
+Route::get('/todo/create', 'TodoController@create'); // 追記
     //return view('welcome');
-    echo 'Hello World!';
+    
