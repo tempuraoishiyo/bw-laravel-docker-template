@@ -13,7 +13,7 @@ class TodoController extends Controller
         $todo = new Todo(); //追加
         $todos = $todo->all(); //追加
 
-        return view('todo.index',['todos' => '$todos']); // 修正
+        return view('todo.index',['todos' => $todos]); // 修正
     }
 }
 
