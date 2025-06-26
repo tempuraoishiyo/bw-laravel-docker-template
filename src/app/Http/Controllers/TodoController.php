@@ -8,13 +8,13 @@ use App\Todo; //追加
 
 class TodoController extends Controller
 {
-     //public function index()
-    //{
-        //$todo = new Todo(); //追加
-        //$todos = $todo->all(); //追加
+     public function index()
+    {
+    $todo = new Todo(); //追加
+        $todos = $todo->all(); //追加
 
-        //return view('todo.index',['todos' => $todos]); // 修正
-    //}
+        return view('todo.index',['todos' => $todos]); // 修正
+    }
 
     //public function create()
 //  {
@@ -22,7 +22,7 @@ class TodoController extends Controller
 
     
 //   }
-   public function index()
+   public function create()
 {
     $todos = Todo::all();
     return view('todo.create', ['todos' => $todos]);
